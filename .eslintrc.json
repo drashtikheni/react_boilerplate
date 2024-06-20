@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended",
@@ -62,7 +63,7 @@
     "react-hooks/exhaustive-deps": "off",
     "no-undef": "error",
     "no-unused-vars": "error",
-    "arrow-parens": ["warn", "as-needed", { "requireForBlockBody": true }],
+    "arrow-parens": ["warn", "as-needed"],
     "no-const-assign": "warn",
     "no-await-in-loop": "error",
     "no-duplicate-case": "error",
