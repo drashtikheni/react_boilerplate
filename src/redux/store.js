@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
+import authSlice from './slices/auth.slice'
 import { LOGOUT } from '../constants/index.constant'
 import { equal } from '../utils/javascript'
-import authSlice from './slices/auth.slice'
 
 const appReducer = combineReducers({
   auth: authSlice,

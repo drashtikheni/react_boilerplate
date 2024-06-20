@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+
 import { GET, ME } from '../../constants/apiPath.constant'
-import { api } from '../../utils/api'
 import { EMPTY_OBJECT } from '../../constants/index.constant'
+import { api } from '../../utils/api'
 
 const initialState = {
   data: EMPTY_OBJECT,
