@@ -7,6 +7,7 @@
   },
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
     "prettier"
@@ -43,22 +44,22 @@
     "no-console": "warn",
     "react-hooks/rules-of-hooks": "off",
     "no-duplicate-imports": "error",
-    "import/order": [
-      "warn",
-      {
-        "newlines-between": "always",
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          ["parent", "sibling", "index"]
-        ],
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
-      }
-    ],
+    // "import/order": [
+    //   "warn",
+    //   {
+    //     "newlines-between": "always",
+    //     "groups": [
+    //       "builtin",
+    //       "external",
+    //       "internal",
+    //       ["parent", "sibling", "index"]
+    //     ],
+    //     "alphabetize": {
+    //       "order": "asc",
+    //       "caseInsensitive": true
+    //     }
+    //   }
+    // ],
     "import/no-anonymous-default-export": "off",
     "react-hooks/exhaustive-deps": "off",
     "no-undef": "error",

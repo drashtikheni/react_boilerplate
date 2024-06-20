@@ -1,10 +1,10 @@
-import { id } from '../constant/formField.constant'
+import { ID } from '../constants/formFields.constant'
 import {
   BOOLEAN,
   EMPTY_COUNT,
   OBJECT,
   STRING,
-} from '../constant/index.constant'
+} from '../constants/index.constant'
 
 export const equal = (obj1, obj2) => obj1 === obj2
 
@@ -66,7 +66,7 @@ export const env = key => process.env[key]
 
 export const next = value => +value + 1
 
-export const removeUniqueArray = (arr, type = id) => {
+export const removeUniqueArray = (arr, type = ID) => {
   const uniqueIds = []
   const unique = arr.filter(element => {
     const isDuplicate = checkIncludes(element[type], uniqueIds)
